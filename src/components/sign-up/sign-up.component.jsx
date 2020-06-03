@@ -17,6 +17,41 @@ class SignUp extends React.Component {
     };
   }
 
+  handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const { displayName, email, password, confirmPassword } = this.state;
+
+    if (password !== confirmPassword) {
+      alert("Passwords don't match");
+      return;
+    }
+
+    try {
+      const { user } = await auth.createUserWithEmailAndPassword(
+        email,
+        password
+      );
+
+      createUserProfileDocument(user, { displayName });
+
+      this.setState({
+        displayName: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+      });
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
+  handleChange = (e) => {
+    const { name, value } = e.target;
+
+    this.setState({ [name]: value });
+  };
+
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
@@ -24,7 +59,7 @@ class SignUp extends React.Component {
         <h2 className="title">Don't have an account</h2>
         <span>Sign up with your email and password.</span>
 
-        <form className="sign-up-form">
+        <form onSubmit={this.handleSubmit}>
           <FormInput
             name="displayName"
             type="text"
@@ -51,7 +86,7 @@ class SignUp extends React.Component {
           />
           <FormInput
             name="confirmPassword"
-            type="confirmPassword"
+            type="password"
             label="Confirm Password"
             value={confirmPassword}
             onChange={this.handleChange}
