@@ -19,7 +19,6 @@ class SignUp extends React.Component {
 
   handleSubmit = async (e) => {
     e.preventDefault();
-
     const { displayName, email, password, confirmPassword } = this.state;
 
     if (password !== confirmPassword) {
@@ -32,9 +31,7 @@ class SignUp extends React.Component {
         email,
         password
       );
-
       createUserProfileDocument(user, { displayName });
-
       this.setState({
         displayName: "",
         email: "",
@@ -48,7 +45,6 @@ class SignUp extends React.Component {
 
   handleChange = (e) => {
     const { name, value } = e.target;
-
     this.setState({ [name]: value });
   };
 
