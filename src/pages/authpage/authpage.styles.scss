@@ -6,3 +6,14 @@
 .form {
   margin: 20px;
 }
+
+@media screen and (max-width: 992px) {
+  .auth {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    margin-bottom: 20px;
+  }
+}
