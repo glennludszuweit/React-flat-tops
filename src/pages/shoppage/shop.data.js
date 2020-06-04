@@ -64,6 +64,154 @@ const SHOP_DATA = [
   },
   {
     id: 2,
+    title: "Jackets",
+    routeName: "jackets",
+    items: [
+      {
+        id: 18,
+        name: "Black Jean Shearling",
+        imageUrl: "/images/shop-img/jackets/black-shearling.png",
+        price: 125,
+      },
+      {
+        id: 19,
+        name: "Blue Jean Jacket",
+        imageUrl: "/images/shop-img/jackets/blue-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 20,
+        name: "Grey Jean Jacket",
+        imageUrl: "/images/shop-img/jackets/grey-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 21,
+        name: "Brown Shearling",
+        imageUrl: "/images/shop-img/jackets/brown-shearling.png",
+        price: 165,
+      },
+      {
+        id: 22,
+        name: "Tan Trench",
+        imageUrl: "/images/shop-img/jackets/brown-trench.png",
+        price: 185,
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Bags",
+    routeName: "bags",
+    items: [
+      {
+        id: 18,
+        name: "Black Jean Shearling",
+        imageUrl: "/images/shop-img/bags/black-shearling.png",
+        price: 125,
+      },
+      {
+        id: 19,
+        name: "Blue Jean Jacket",
+        imageUrl: "/images/shop-img/bags/blue-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 20,
+        name: "Grey Jean Jacket",
+        imageUrl: "/images/shop-img/bags/grey-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 21,
+        name: "Brown Shearling",
+        imageUrl: "/images/shop-img/bags/brown-shearling.png",
+        price: 165,
+      },
+      {
+        id: 22,
+        name: "Tan Trench",
+        imageUrl: "/images/shop-img/bags/brown-trench.png",
+        price: 185,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Sports",
+    routeName: "sports",
+    items: [
+      {
+        id: 18,
+        name: "Black Jean Shearling",
+        imageUrl: "/images/shop-img/sports/black-shearling.png",
+        price: 125,
+      },
+      {
+        id: 19,
+        name: "Blue Jean Jacket",
+        imageUrl: "/images/shop-img/sports/blue-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 20,
+        name: "Grey Jean Jacket",
+        imageUrl: "/images/shop-img/sports/grey-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 21,
+        name: "Brown Shearling",
+        imageUrl: "/images/shop-img/sports/brown-shearling.png",
+        price: 165,
+      },
+      {
+        id: 22,
+        name: "Tan Trench",
+        imageUrl: "/images/shop-img/sports/brown-trench.png",
+        price: 185,
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Accessories",
+    routeName: "accessories",
+    items: [
+      {
+        id: 18,
+        name: "Black Jean Shearling",
+        imageUrl: "/images/shop-img/accessories/black-shearling.png",
+        price: 125,
+      },
+      {
+        id: 19,
+        name: "Blue Jean Jacket",
+        imageUrl: "/images/shop-img/accessories/blue-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 20,
+        name: "Grey Jean Jacket",
+        imageUrl: "/images/shop-img/accessories/grey-jean-jacket.png",
+        price: 90,
+      },
+      {
+        id: 21,
+        name: "Brown Shearling",
+        imageUrl: "/images/shop-img/accessories/brown-shearling.png",
+        price: 165,
+      },
+      {
+        id: 22,
+        name: "Tan Trench",
+        imageUrl: "/images/shop-img/accessories/brown-trench.png",
+        price: 185,
+      },
+    ],
+  },
+  {
+    id: 6,
     title: "Sneakers",
     routeName: "sneakers",
     items: [
@@ -118,44 +266,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    id: 3,
-    title: "Jackets",
-    routeName: "jackets",
-    items: [
-      {
-        id: 18,
-        name: "Black Jean Shearling",
-        imageUrl: "/images/shop-img/jackets/black-shearling.png",
-        price: 125,
-      },
-      {
-        id: 19,
-        name: "Blue Jean Jacket",
-        imageUrl: "/images/shop-img/jackets/blue-jean-jacket.png",
-        price: 90,
-      },
-      {
-        id: 20,
-        name: "Grey Jean Jacket",
-        imageUrl: "/images/shop-img/jackets/grey-jean-jacket.png",
-        price: 90,
-      },
-      {
-        id: 21,
-        name: "Brown Shearling",
-        imageUrl: "/images/shop-img/jackets/brown-shearling.png",
-        price: 165,
-      },
-      {
-        id: 22,
-        name: "Tan Trench",
-        imageUrl: "/images/shop-img/jackets/brown-trench.png",
-        price: 185,
-      },
-    ],
-  },
-  {
-    id: 4,
+    id: 7,
     title: "Womens",
     routeName: "womens",
     items: [
@@ -204,7 +315,7 @@ const SHOP_DATA = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     title: "Mens",
     routeName: "mens",
     items: [
