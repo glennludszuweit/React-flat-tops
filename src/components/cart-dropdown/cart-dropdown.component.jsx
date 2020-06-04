@@ -4,7 +4,7 @@ import "./cart-dropdown.styles.scss";
 
 const CartDropdown = () => (
   <div className="cart-dropdown">
-    <div className="cart-items" />
+    <div className="cart-items" id="scroll-style" />
     <CustomButton>CHECKOUT</CustomButton>
   </div>
 );
