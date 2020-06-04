@@ -1,7 +1,10 @@
 .collection-preview {
   display: flex;
-  flex: auto;
-  flex-direction: column;
+  // flex: auto;
+  // flex-wrap: wrap;
+  // flex-direction: column;
+  flex-basis: 500px;
+  flex-flow: column wrap;
   margin-bottom: 30px;
 
   .title {
